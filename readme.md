@@ -1,5 +1,5 @@
 # PowerBench
-Automatic Energy Consumption Measuring Platform
+Automatic Energy Consumption Measuring Platform for Embedded Systems
 
 ## Hardware Requirements
 1. a digital power supply or multimeter that supports SCPI command;
@@ -9,5 +9,5 @@ Automatic Energy Consumption Measuring Platform
 ## Software Requirements
 1. Developed and only tested on Eclipse JUNO (Version: 4.2.2 Build id: M20130204-1200)
 2. Java 8 Runtime Environment required;
-3. Java 7 Runtime Environment compatible, but assertion must be enabled (-ea parameter required);
+3. Java 7 Runtime Environment compatible, but assertion must be enabled (launch with -ea parameter);
 4. rxtxComm required.
