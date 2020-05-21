@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="cn/edu/zju/fm/powerbench/AutoTest_bak.java" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/RXTXcomm.jar"/>
+	<classpathentry kind="lib" path="D:/xfbench/eclipse/plugins/org.eclipse.swt_3.100.1.v4236b.jar"/>
+	<classpathentry kind="lib" path="D:/xfbench/eclipse/plugins/org.eclipse.jface_3.8.102.v20130123-162658.jar"/>
+	<classpathentry kind="lib" path="D:/xfbench/eclipse/plugins/org.eclipse.ui.workbench_3.104.0.v20130204-164612.jar"/>
+	<classpathentry kind="lib" path="D:/xfbench/eclipse/plugins/org.eclipse.swt.win32.win32.x86_3.100.1.v4236b.jar"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="lib" path="D:/xfbench/eclipse/plugins/org.eclipse.core.runtime_3.8.0.v20120912-155025.jar"/>
+	<classpathentry kind="lib" path="D:/xfbench/eclipse/plugins/org.eclipse.osgi_3.8.2.v20130124-134944.jar"/>
+	<classpathentry kind="lib" path="D:/xfbench/eclipse/plugins/org.eclipse.ui.console_3.5.100.v20120521-2012.jar"/>
+	<classpathentry kind="lib" path="D:/xfbench/eclipse/plugins/org.eclipse.jface.text_3.8.2.v20121126-164145.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

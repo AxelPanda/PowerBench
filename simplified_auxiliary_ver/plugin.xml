@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="cn.edu.zju.fm.powerbench.actionSet"
+            label="Sample Action Set"
+            visible="true">
+         <menu
+               id="powerBenchMenu"
+               label="功耗评测">
+            <separator
+                  name="powerBenchGroup">
+            </separator>
+         </menu>
+         <action
+               class="cn.edu.zju.fm.powerbench.View"
+               id="cn.edu.zju.fm.powerbench.View"
+               label="数据回看"
+               menubarPath="powerBenchMenu/powerBenchGroup">
+         </action>
+         <action
+               class="cn.edu.zju.fm.powerbench.Chart"
+               id="cn.edu.zju.fm.powerbench.Chart"
+               label="实时数据"
+               menubarPath="powerBenchMenu/powerBenchGroup">
+         </action>
+         <action
+               class="cn.edu.zju.fm.powerbench.Stm32Download"
+               id="cn.edu.zju.fm.powerbench.Stm32Download"
+               label="串口烧写Hex文件"
+               menubarPath="powerBenchMenu/powerBenchGroup">
+         </action>
+         <action
+               class="cn.edu.zju.fm.powerbench.AutoTest"
+               id="cn.edu.zju.fm.powerbench.AutoTest"
+               label="运行自动测试"
+               menubarPath="powerBenchMenu/powerBenchGroup">
+         </action>
+         <action
+               class="cn.edu.zju.fm.powerbench.ConfigEditor"
+               id="cn.edu.zju.fm.powerbench.ConfigEditor"
+               label="修改配置信息"
+               menubarPath="powerBenchMenu/powerBenchGroup">
+         </action>
+      </actionSet>
+   </extension>
+   <extension
+         point="org.eclipse.ui.console.consoleFactories">
+      <consoleFactory
+            class="cn.edu.zju.fm.powerbench/ConsoleFactory"
+            label="功耗测评控制台">
+      </consoleFactory>
+   </extension>
+
+</plugin>

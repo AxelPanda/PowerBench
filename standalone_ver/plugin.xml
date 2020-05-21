@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Sample Category"
+            id="org.fmlab.evaluation">
+      </category>
+      <view
+            name="温度监控"
+            inject="true"
+            icon="icons/sample.png"
+            category="org.fmlab.evaluation"
+            class="org.fmlab.evaluation.views.ThermalView"
+            id="org.fmlab.evaluation.views.ThermalView">
+      </view>
+      <view
+            category="org.fmlab.evaluation"
+            class="org.fmlab.evaluation.views.PowerView"
+            icon="icons/sample.png"
+            id="org.fmlab.evaluation.views,PowerView"
+            name="数据"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="org.fmlab.evaluation.workbenchActionSet"
+            label="Eva ActionSet"
+            visible="true">
+         <menu
+               id="org.fmlab.evaluation.workbenchMenu"
+               label="Evaluation"
+               path="additions">
+         </menu>
+         <action
+               class="org.fmlab.evaluation.actions.Evaluation"
+               icon="icons/sample.png"
+               id="org.fmlab.evaluation.start"
+               label="start"
+               menubarPath="org.fmlab.evaluation.workbenchMenu/content"
+               style="push">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>
